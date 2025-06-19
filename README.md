@@ -1,26 +1,42 @@
-NOTE: This project was completed as the final capstone exercise for the Udemy course Data Science and Machine Learning Bootcamp with R.
+# Money Ball Analysis
 
-# Money_Ball_Analysis
-Lost vs Replacement Baseball Players Analysis (2001)
-This project analyzes Major League Baseball players from the 2001 season to compare “lost players” (three specific players no longer on the team) and potential replacement players. It uses batting and salary data to identify replacement candidates based on on-base percentage (OBP) and at-bats (AB), and visualizes salary vs. OBP differences.
+## Introduction
+This project analyzes baseball player data to compare “lost players” with potential replacements based on their On-Base Percentage (OBP) and salary. It uses data from the 2001 season and calculates key statistics such as batting average (BA), slugging percentage (SLG), and OBP to help identify cost-effective replacement players.
 
-About the Analysis
-Data sources: Batting statistics (Batting.csv) and salary information (Salaries.csv).
+This analysis was completed as the final capstone exercise for the Udemy course *Data Science and Machine Learning Bootcamp with R*.
 
-Key metrics:
-Batting Average (BA)
-On-Base Percentage (OBP)
-Slugging Percentage (SLG)
+---
 
-Process:
-Load and merge batting and salary data.
-Calculate new statistics (BA, OBP, SLG).
-Filter for the year 2001 and select three “lost” players.
-Calculate average OBP and minimum at-bats among lost players.
-Find replacement candidates with better OBP and enough playing time.
-Plot salary vs OBP to compare lost and replacement players.
+## Files Included
 
-How to Use
-Place Batting.csv and Salaries.csv in your working directory.
-Run the R script analysis.R (or the script file you name it).
-View the generated plot to explore salary and OBP distributions.
+- `analysis.R`: The R script containing the full analysis and visualization code.  
+- `Batting.csv`: Batting statistics data (1985 and later).  
+- `Salaries.csv`: Player salary data (1985 and later).  
+
+---
+
+## How to Run the Code
+
+1. Make sure you have R and RStudio installed on your computer.  
+2. Download or clone this repository to your local machine.  
+3. Open `analysis.R` in RStudio.  
+4. Run the script line-by-line or all at once to reproduce the analysis and plot.  
+
+---
+
+## Workflow & What You’ll See
+
+- Load and merge batting and salary data from 1985 onward.  
+- Calculate key batting statistics: Batting Average (BA), On-Base Percentage (OBP), and Slugging Percentage (SLG).  
+- Filter the dataset for the 2001 season and identify three key “lost” players.  
+- Compute the average OBP and minimum at-bats for these lost players to set benchmarks.  
+- Select replacement candidates who have a higher OBP and sufficient playing time compared to the lost players.  
+- Visualize the comparison by plotting salary against OBP, highlighting lost players and potential replacements with distinct colors and labels.
+
+---
+
+## Notes
+
+- The data files included are necessary to run the analysis.  
+- The plot uses `ggplot2` for visualization and includes player labels for the lost players.  
+- Salary axis is limited to $0 to $15,000,000 for clearer visualization.
