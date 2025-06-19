@@ -10,7 +10,7 @@ This analysis was completed as the final capstone exercise for the Udemy course 
 ## Files Included
 
 - `analysis.R`: The R script containing the full analysis and visualization code.  
-- `Batting.csv`: Batting statistics data (1985 and later).  
+- `Batting.csv`: Batting statistics data.  
 - `Salaries.csv`: Player salary data (1985 and later).  
 
 ---
